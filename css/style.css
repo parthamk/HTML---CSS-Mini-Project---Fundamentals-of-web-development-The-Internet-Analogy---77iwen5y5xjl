@@ -151,30 +151,55 @@ section{
     display: none;
 }
 
+.wrap-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrap-header .icons{
+    padding-right: 5%;
+}
+.wrap-header .icons .fas{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.wrap-header .icons .fas:hover{
+    color: gold;
+}
+
+
 .header .header-2{
     background:var(--green);
+    padding-left: 5%;
 }
 
 .header .header-2 .navbar{
     text-align: center;
+    /* min-height: 56px; */
 }
 
 .header .header-2 .navbar a{
     color:#fff;
     display: inline-block;
     padding:1.2rem;
-    font-size: 1.7rem;
+    font-size: 18.5px;
+    align-items: center;
 }
 
 .header .header-2 .navbar a:hover{
-    background:var(--dark-color);
+    /* background:var(--dark-color); */
+    border-bottom: 5px solid gold;
+    color: gold;
+    font-style: oblique;
 }
 
 .header .header-2.active{
     position:fixed;
     top:0; left:0; right:0;
     z-index: 1000;
-
 }
 
 .bottom-navbar{
@@ -344,6 +369,7 @@ section{
     gap:1.5rem;
     padding:2rem 0;
 }
+
 
 .icons-container .icons i{
     font-size: 3.5rem;
@@ -713,7 +739,7 @@ section{
     height:100%;
     width: 100%;
     z-index: 10000;
-    background:#f7f7f7;
+    background:#d8d6d6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -724,7 +750,7 @@ section{
 }
 
 .loader-container img{
-    height:10rem;
+    height:20rem;
 }
 
 
@@ -738,7 +764,7 @@ section{
 
 /* media queries  */
 
-@media (max-width:991px){
+@media (max-width:1440px){
 
     html{
         font-size: 55%;
@@ -748,9 +774,16 @@ section{
         padding:2rem;
     }
 
+    .header .header-1 .icons{
+        display: none;
+    }
+
     section{
         padding:3rem 2rem;
     }
+    /* .wrap-header .header-2 .icons{
+        display: flex;
+    } */
 
 }
 
@@ -786,6 +819,10 @@ section{
         top:-115%; right:2rem;
         width: 90%;
         box-shadow: var(--box-shadow);
+    }
+
+    .header .header-1 .icons{
+        display: flex;
     }
 
     .header .header-1 .search-form.active{
