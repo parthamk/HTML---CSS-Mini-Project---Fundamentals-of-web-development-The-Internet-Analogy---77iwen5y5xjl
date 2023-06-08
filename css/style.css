@@ -196,6 +196,19 @@ section{
     font-style: oblique;
 }
 
+.container-one{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.container-two{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
 .header .header-2.active{
     position:fixed;
     top:0; left:0; right:0;
@@ -776,6 +789,8 @@ section{
 
     .header .header-1{
         padding:2rem;
+        display:flex;
+        flex-direction: column;
     }
 
     .header .header-1 .icons{
